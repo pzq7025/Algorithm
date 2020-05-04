@@ -16,18 +16,18 @@ int path_choose(int &m, int &n) {
     path[0][0] = 1;
     for (int i = 0; i <= m; ++i) {
         for (int j = 0; j <= n; ++j) {
-            if (i == 0) {
+            if (i == 0) { // 边界值
                 path[i][j] = 1;
                 continue;
             }
-            if (j == 0) {
+            if (j == 0) { // 边界值
                 path[i][j] = 1;
                 continue;
             }
-            path[i][j] = path[i - 1][j] + path[i][j - 1];
+            path[i][j] = path[i - 1][j] + path[i][j - 1];  // 下一个路径之和为前面两个之和
         }
     }
-    cout << path[m - 1][n - 1] << endl;
+    cout << path[m - 1][n - 1] << endl;  // 输出m, n的值，因为是前一个所以-1
 }
 
 int main() {
