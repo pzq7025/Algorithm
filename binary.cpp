@@ -14,9 +14,9 @@ int main() {
 
 void twoDivide(int m) {
     int max[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int start = 0, end = 9;
+    int start = 0, end = 8;
     int mid = -1;
-    while (start < end) {
+    while (start <= end) {
         mid = (start + end) / 2;
         if (max[mid] > m) {
             end = mid - 1;
