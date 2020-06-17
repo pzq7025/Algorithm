@@ -1,2 +1,2 @@
 # Algorithm
-record  different  algorithms
+record  different  algorithms and algorithm questions by LeetCode
