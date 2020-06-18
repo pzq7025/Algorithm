@@ -2,7 +2,7 @@
 #include <vector>
 
 using namespace std;
-int serialResult(int &N);
+int serialResult(int &N);  //连续整数求和
 
 int main() {
     int N = 100;
