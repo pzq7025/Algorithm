@@ -5,6 +5,7 @@ matrixx_ = [
     [7, 10]
 ]
 def spare_(matrix):
+    # 求解文本矩阵的相似度：交集/并集的结果为相似度
     matrix = [set(i) for i in matrix]
     final_result = []
     for i in range(len(matrix)):
